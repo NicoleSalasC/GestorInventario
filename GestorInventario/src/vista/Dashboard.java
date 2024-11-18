@@ -90,7 +90,6 @@ public class Dashboard extends javax.swing.JFrame {
         btnAgregarProducto.setBackground(new java.awt.Color(24, 102, 104));
         btnAgregarProducto.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnAgregarProducto.setForeground(new java.awt.Color(255, 255, 255));
-        btnAgregarProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/agregar.png"))); // NOI18N
         btnAgregarProducto.setText("Agregar producto");
         btnAgregarProducto.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 10, 1, 1, new java.awt.Color(0, 0, 0)));
         btnAgregarProducto.setBorderPainted(false);
@@ -109,7 +108,6 @@ public class Dashboard extends javax.swing.JFrame {
         btnEliminarProducto.setBackground(new java.awt.Color(24, 102, 104));
         btnEliminarProducto.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnEliminarProducto.setForeground(new java.awt.Color(255, 255, 255));
-        btnEliminarProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/basura.png"))); // NOI18N
         btnEliminarProducto.setText("Eliminar producto");
         btnEliminarProducto.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 10, 1, 1, new java.awt.Color(0, 0, 0)));
         btnEliminarProducto.setBorderPainted(false);
