@@ -5,6 +5,8 @@
 package vista;
 
 import java.awt.BorderLayout;
+import static java.awt.Color.pink;
+import static java.awt.Color.white;
 import java.time.LocalDate;
 import javax.swing.JPanel;
 
@@ -20,7 +22,6 @@ public class Dashboard extends javax.swing.JFrame {
     public Dashboard() {
         initComponents();
         SetDate();
-
     }
 
     /**
@@ -95,6 +96,11 @@ public class Dashboard extends javax.swing.JFrame {
         btnAgregarProducto.setBorderPainted(false);
         btnAgregarProducto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAgregarProducto.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnAgregarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregarProductoActionPerformed(evt);
+            }
+        });
 
         btnEditarProducto.setBackground(new java.awt.Color(24, 102, 104));
         btnEditarProducto.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -104,6 +110,11 @@ public class Dashboard extends javax.swing.JFrame {
         btnEditarProducto.setBorderPainted(false);
         btnEditarProducto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnEditarProducto.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnEditarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditarProductoActionPerformed(evt);
+            }
+        });
 
         btnEliminarProducto.setBackground(new java.awt.Color(24, 102, 104));
         btnEliminarProducto.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -116,6 +127,11 @@ public class Dashboard extends javax.swing.JFrame {
         btnEliminarProducto.setFocusTraversalPolicyProvider(true);
         btnEliminarProducto.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnEliminarProducto.setOpaque(false);
+        btnEliminarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarProductoActionPerformed(evt);
+            }
+        });
 
         btnFacturas.setBackground(new java.awt.Color(24, 102, 104));
         btnFacturas.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -125,6 +141,11 @@ public class Dashboard extends javax.swing.JFrame {
         btnFacturas.setBorderPainted(false);
         btnFacturas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnFacturas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnFacturas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFacturasActionPerformed(evt);
+            }
+        });
 
         btnUsuario.setBackground(new java.awt.Color(24, 102, 104));
         btnUsuario.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -134,6 +155,11 @@ public class Dashboard extends javax.swing.JFrame {
         btnUsuario.setBorderPainted(false);
         btnUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnUsuario.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUsuarioActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout menuLayout = new javax.swing.GroupLayout(menu);
         menu.setLayout(menuLayout);
@@ -267,7 +293,44 @@ public class Dashboard extends javax.swing.JFrame {
         Venta venta = new Venta();
         setContenido(venta);
 
+
     }//GEN-LAST:event_btnVentaActionPerformed
+
+    private void btnAgregarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarProductoActionPerformed
+
+        Agregar agregar = new Agregar();
+        setContenido(agregar);
+
+    }//GEN-LAST:event_btnAgregarProductoActionPerformed
+
+    private void btnEditarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarProductoActionPerformed
+        Editar editar = new Editar();
+        setContenido(editar);
+    }//GEN-LAST:event_btnEditarProductoActionPerformed
+
+    private void btnEliminarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProductoActionPerformed
+
+        Eliminar eliminar = new Eliminar();
+        setContenido(eliminar);
+
+
+    }//GEN-LAST:event_btnEliminarProductoActionPerformed
+
+    private void btnFacturasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFacturasActionPerformed
+
+        Facturas facturas = new Facturas();
+        setContenido(facturas);
+
+
+    }//GEN-LAST:event_btnFacturasActionPerformed
+
+    private void btnUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioActionPerformed
+
+        Usuario usuario = new Usuario();
+        setContenido(usuario);
+
+
+    }//GEN-LAST:event_btnUsuarioActionPerformed
 
     public void setContenido(JPanel p) {
         p.setSize(1045, 638);
