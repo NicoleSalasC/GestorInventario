@@ -45,7 +45,7 @@ public class Venta extends javax.swing.JPanel {
         btnAgregar = new javax.swing.JButton();
         btnProceder = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
-        txtFactura = new javax.swing.JTextArea();
+        txtaFactura = new javax.swing.JTextArea();
         btnLimpiar1 = new javax.swing.JButton();
 
         jTextArea1.setColumns(20);
@@ -137,10 +137,10 @@ public class Venta extends javax.swing.JPanel {
             }
         });
 
-        txtFactura.setBackground(new java.awt.Color(255, 255, 255));
-        txtFactura.setColumns(20);
-        txtFactura.setRows(5);
-        jScrollPane3.setViewportView(txtFactura);
+        txtaFactura.setBackground(new java.awt.Color(255, 255, 255));
+        txtaFactura.setColumns(20);
+        txtaFactura.setRows(5);
+        jScrollPane3.setViewportView(txtaFactura);
 
         btnLimpiar1.setBackground(new java.awt.Color(24, 102, 104));
         btnLimpiar1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -265,7 +265,7 @@ public class Venta extends javax.swing.JPanel {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JSpinner spinCantidad;
     private javax.swing.JTable tblProductos;
-    private javax.swing.JTextArea txtFactura;
     private javax.swing.JTextField txtProducto;
+    private javax.swing.JTextArea txtaFactura;
     // End of variables declaration//GEN-END:variables
 }

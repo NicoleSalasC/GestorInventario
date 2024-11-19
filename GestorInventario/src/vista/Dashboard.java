@@ -87,6 +87,11 @@ public class Dashboard extends javax.swing.JFrame {
         btnInventario.setBorderPainted(false);
         btnInventario.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnInventario.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnInventario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInventarioActionPerformed(evt);
+            }
+        });
 
         btnAgregarProducto.setBackground(new java.awt.Color(24, 102, 104));
         btnAgregarProducto.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -331,6 +336,14 @@ public class Dashboard extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_btnUsuarioActionPerformed
+
+    private void btnInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInventarioActionPerformed
+
+        Inventario inventario = new Inventario();
+        setContenido(inventario);
+
+
+    }//GEN-LAST:event_btnInventarioActionPerformed
 
     public void setContenido(JPanel p) {
         p.setSize(1045, 638);

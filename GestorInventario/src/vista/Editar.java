@@ -5,6 +5,7 @@
 package vista;
 
 import java.awt.Color;
+import javax.swing.JScrollPane;
 import javax.swing.table.JTableHeader;
 
 /**
@@ -16,9 +17,12 @@ public class Editar extends javax.swing.JPanel {
     /**
      * Creates new form Venta
      */
+    
     public Editar() {
         initComponents();
         
+        
+     
     }
 
     /**
@@ -101,34 +105,10 @@ public class Editar extends javax.swing.JPanel {
         tblProductos.setForeground(new java.awt.Color(0, 0, 0));
         tblProductos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Id", "Nombre", "Stock", "Precio"
+                "ID", "Nombre", "Stock", "Precio"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -204,7 +184,8 @@ public class Editar extends javax.swing.JPanel {
         jLabel9.setText("Cantidad en stock:");
 
         txtaDescripcionAEditar.setColumns(20);
-        txtaDescripcionAEditar.setRows(5);
+        txtaDescripcionAEditar.setRows(1);
+        txtaDescripcionAEditar.setAutoscrolls(false);
         jScrollPane3.setViewportView(txtaDescripcionAEditar);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -312,7 +293,7 @@ public class Editar extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 644, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
